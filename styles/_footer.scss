@@ -1,0 +1,15 @@
+body{
+    footer{
+        margin: 24px;
+        height: 100px;
+        text-align: center;
+        p{
+            @include p-bloque-mobile;
+            margin-bottom: 30px;
+        }
+        .contenedor-i{
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
