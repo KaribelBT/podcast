@@ -43,7 +43,6 @@ body{
             .contenedor-iframe{
                 box-sizing: content-box;
                 margin: 11px;
-                         
             }
         }
         .nosotros{
@@ -131,6 +130,65 @@ body{
                     &:hover{
                         @include button-hover;
                     }
+                }
+            }
+        }
+    }
+}
+
+/* medium devices (tablets, 768 and and up) */
+@media only screen and (min-width: 768px){
+    body{
+        main{
+            .intro{
+                h1{
+                    max-width: 100%;
+                }
+            }
+            .episodios{
+                height: 1042.60px;
+                clip-path: polygon(0 12%, 100% 0, 100% 91%, 0% 100%);
+                justify-content: center;
+                .contenedor-iframe{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    iframe{
+                        width: 40%;
+                        padding: 11px;
+                    }
+                }
+            }
+            .nosotros{
+                display: flex;
+                flex-wrap: wrap;
+                .contenedor-imagen{
+                    width: 320px;
+                    transform: translate(3px, -141px);
+                    img{
+                        width: 320px;
+                        height: 660px;
+                    }
+                }
+                .contenedor-texto{
+                    width: 300px;
+                    transform: translatey(112px);
+                }
+            }
+            .entrevistas{
+                margin-top: -100px;
+            }
+            .topicos{
+                .contenedor-iconos{
+                    flex-direction: row;
+                    align-items: center;
+                    height: 300px;
+                }
+            }
+            .novedades{
+                clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
+                h2{
+                    max-width: 100%;
                 }
             }
         }
