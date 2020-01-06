@@ -1,0 +1,83 @@
+@mixin button-hover{
+    background-image: $button-background-image;
+    color:$color-secondary;
+}
+/*Medium devices (landscape tablets, 768px and down)*/
+@mixin menu-text-mobile{
+    color: $color-secondary;
+    font-size: 16px;
+    line-height: 1.38em;
+    font-family: $font-family;
+}
+@mixin h1-mobile{
+    font-family: $font-family-title;
+    font-size: 36px;
+    color: $color-primary;
+    line-height: 1.16em;
+}
+@mixin h2-mobile{
+    font-family: $font-family-title;
+    font-size: 36px;
+    line-height: 1.16em;
+}
+@mixin p-bloque-mobile{
+    margin-top: 16px;
+    font-family: $font-family;
+    font-size: 14px;
+    color: $color-primary;
+    line-height: 1.57em;
+}
+@mixin button-mobile{
+    width: 288px;
+    height: 48px;
+    font-family: $font-family;
+    color: $color-primary;
+    font-size: 16px;
+    line-height: 1.38em;
+    background-color: $button-background-color;
+    border: none;
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@mixin menu-text-desktop{
+    font-family: $font-family;
+    font-size: 16px;
+    line-height: 1.38em;
+    color: $color-primary;
+}
+@mixin menu-text-hover{
+    color: $color-hover;
+    text-decoration:line-through;
+    font-weight: bold;
+}
+@mixin menu-text-active{
+    color: $color-active;
+    text-decoration:line-through;
+}
+@mixin h1-desktop{
+    font-family: $font-family-title;
+    font-size: 64px;
+    color: $color-primary;
+    line-height: 1.31em;
+}
+@mixin h2-desktop{
+    font-family: $font-family-title;
+    font-size: 48px;
+    line-height: 1.29em;
+}
+@mixin p-bloque-desktop{
+    margin-top: 16px;
+    font-family: $font-family;
+    font-size: 16px;
+    color: $color-primary;
+    line-height: 1.50em;
+}
+@mixin button-desktop{
+    width: 226px;
+    height: 56px;
+    font-family: $font-family;
+    color: $color-primary;
+    font-size: 18px;
+    line-height: 1.33em;
+    background-color: $button-background-color;
+    border: none;
+}

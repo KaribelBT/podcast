@@ -1,3 +1,4 @@
+/*Medium devices (landscape tablets, 768px and down)*/
 body{
     main{
         .intro{
@@ -5,21 +6,21 @@ body{
             margin-right: 16px;
             margin-left: 16px;
             h1{
-                font-family: $font-family-title;
-                font-size: 36px;
-                color: $color-primary;
-                line-height: 1.16em;
+               @include h1-mobile; 
                 max-width: 250px;
             }
             p{
                 @include p-bloque-mobile;
+                span{
+                    display: none;
+                }
             }
             .contenedor-button{
                 margin-top: 36px;
                 margin-bottom: 24px;
                 text-align: center;
                 button{
-                    @include button;
+                    @include button-mobile;
                     &:hover{
                         @include button-hover;
                     }
@@ -41,7 +42,6 @@ body{
                 @include h2-mobile;
             }
             .contenedor-iframe{
-                box-sizing: content-box;
                 margin: 11px;
             }
         }
@@ -50,7 +50,7 @@ body{
                 z-index: 1;
                 transform: translate(3px, -105px);
                 img{
-                    width: 97%;
+                    width: 320px;
                 }
             }
             .contenedor-texto{
@@ -126,7 +126,7 @@ body{
                 margin-bottom: 24px;
                 text-align: center;
                 button{
-                    @include button;
+                    @include button-mobile;
                     &:hover{
                         @include button-hover;
                     }
@@ -189,6 +189,111 @@ body{
                 clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
                 h2{
                     max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px){
+    body{
+        main{
+            .intro{
+                margin-left: 166px;
+                h1{
+                    @include h1-desktop;
+                    span{
+                        color: $color-dot;
+                        font-family: $font-family-title;
+                    }
+                }
+                p{
+                    max-width: 630px;
+                    @include p-bloque-desktop;
+                    span{
+                        display: inline;
+                    }
+                }
+                .contenedor-button{
+                    text-align: left;
+                    button{
+                        @include button-desktop;
+                    }    
+                }
+            }
+            .episodios{
+                height: 1042,60px;
+                h2{
+                    margin-top: -52px;
+                    margin-left: 166px;
+                    @include h2-desktop;
+                }
+                .contenedor-iframe{
+                    width: 100%;
+                    display:flex;
+                    justify-content: space-evenly;
+                    iframe{
+                        margin-bottom: 44px;
+                    }
+                }
+            }
+            .nosotros{
+               display: flex;
+               justify-content: center;
+               .contenedor-imagen{
+                   width: 400px;
+                   transform: translate(3px, -192px);
+                   img{
+                       width: 100%;
+                   }
+                }
+                .contenedor-texto{
+                    width: 481px;
+                    padding-left: 115px;
+                    h2{
+                        @include h2-desktop;
+                    }
+                    p{
+                        @include p-bloque-desktop;
+                    }
+                }
+            } 
+            .entrevistas{
+                h2{
+                    margin-left: 166px;
+                    @include h2-desktop;
+                }
+                .contenedor-imagen{
+                    display:grid;
+                    grid-template-rows: 1fr 1fr;
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+            }
+            .topicos{
+                h2{
+                    margin-left: 166px;
+                    @include h2-desktop;
+                }
+                .contenedor-iconos{
+                    justify-content: center;
+                    img{
+                        padding:30px;
+                    }
+                    p{
+                        padding:30px;
+                    }
+                }
+            }
+            .novedades{
+                height: 518px;
+                clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+                h2{
+                    margin-top: 121px;
+                    @include h2-desktop;
+                }
+                button{
+                    @include button-desktop;
                 }
             }
         }

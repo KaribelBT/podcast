@@ -50,10 +50,8 @@ body{
                         display:block;
                         width: 87px; 
                         height:28px;
-                        color: $color-secondary;
                         text-decoration: none;
-                        font-weight: 16px;
-                        font-family: $font-family;
+                        @include menu-text-mobile;
                     }
                 }
             }
@@ -70,4 +68,41 @@ body{
     }
 }
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px){}
+@media only screen and (min-width: 992px){
+    body{
+        header{
+            height: 80px;
+            margin-top:20px;
+            #bars{
+                display: none;
+            } 
+            img{
+              margin-left: 64px;  
+            }
+            .menu{
+                width: 600px;
+                position: relative;
+                right: 0;
+                margin-top: 0;
+                height: 80px;
+                background-color: $color-secondary;
+                ul{
+                    flex-direction: row;
+                    justify-content: space-around;
+                    padding-left: 0;
+                    li{
+                        a{
+                            @include menu-text-desktop;
+                            &:hover{
+                                @include menu-text-hover;
+                            }
+                            &:active{
+                                @include menu-text-active;
+                            }
+                        }
+                    }
+                }   
+            } 
+        }
+    }
+}

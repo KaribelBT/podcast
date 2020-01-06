@@ -1,3 +1,4 @@
+/*Medium devices (landscape tablets, 768px and down)*/
 body{
     footer{
         margin: 24px;
@@ -10,6 +11,32 @@ body{
         .contenedor-i{
             display: flex;
             justify-content: space-around;
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px){
+    body{
+        footer{
+           margin: 0;
+           height: 60px;
+           display:flex;
+           flex-direction: row;
+           justify-content: space-between;
+           align-items: center;
+            p{
+                @include p-bloque-desktop;
+                margin-bottom: 0;
+                margin-left: 60px;
+            }
+            .contenedor-i{
+                width: 400px;
+                height: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
         }
     }
 }
