@@ -48,7 +48,9 @@ body{
         .nosotros{
             .contenedor-imagen{
                 z-index: 1;
-                transform: translate(3px, -105px);
+                transform: translatey(-105px);
+                display: flex;
+                justify-content: center;
                 img{
                     width: 320px;
                 }

@@ -167,8 +167,14 @@ body main .episodios {
     margin: 11px; }
 body main .nosotros .contenedor-imagen {
   z-index: 1;
-  -webkit-transform: translate(3px, -105px);
-          transform: translate(3px, -105px); }
+  -webkit-transform: translatey(-105px);
+          transform: translatey(-105px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   body main .nosotros .contenedor-imagen img {
     width: 320px; }
 body main .nosotros .contenedor-texto {
@@ -499,5 +505,4 @@ body footer {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; } }
-
 /*# sourceMappingURL=styles.css.map */
