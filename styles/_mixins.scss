@@ -3,7 +3,7 @@
     color:$color-secondary;
 }
 /*Medium devices (landscape tablets, 768px and down)*/
-@mixin menu-text-mobile{
+@mixin navbar-text-mobile{
     color: $color-secondary;
     font-size: 16px;
     line-height: 1.38em;
@@ -20,7 +20,7 @@
     font-size: 36px;
     line-height: 1.16em;
 }
-@mixin p-bloque-mobile{
+@mixin p-block-mobile{
     margin-top: 16px;
     font-family: $font-family;
     font-size: 14px;
@@ -38,18 +38,18 @@
     border: none;
 }
 /* Large devices (laptops/desktops, 992px and up) */
-@mixin menu-text-desktop{
+@mixin navbar-text-desktop{
     font-family: $font-family;
     font-size: 16px;
     line-height: 1.38em;
     color: $color-primary;
 }
-@mixin menu-text-hover{
+@mixin navbar-text-hover{
     color: $color-hover;
     text-decoration:line-through;
-    font-weight: bold;
+    font-weight: 500;
 }
-@mixin menu-text-active{
+@mixin navbar-text-active{
     color: $color-active;
     text-decoration:line-through;
 }
@@ -64,7 +64,7 @@
     font-size: 48px;
     line-height: 1.29em;
 }
-@mixin p-bloque-desktop{
+@mixin p-block-desktop{
     margin-top: 16px;
     font-family: $font-family;
     font-size: 16px;

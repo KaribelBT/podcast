@@ -5,12 +5,18 @@ body{
         height: 100px;
         text-align: center;
         p{
-            @include p-bloque-mobile;
+            @include p-block-mobile;
             margin-bottom: 30px;
         }
-        .contenedor-i{
+        .i-container{
             display: flex;
             justify-content: space-around;
+            a{
+                color: $color-primary;
+                &:visited{
+                    color: $color-primary;
+                }
+            }
         }
     }
 }
@@ -26,11 +32,11 @@ body{
            justify-content: space-between;
            align-items: center;
             p{
-                @include p-bloque-desktop;
+                @include p-block-desktop;
                 margin-bottom: 0;
                 margin-left: 60px;
             }
-            .contenedor-i{
+            .i-container{
                 width: 400px;
                 height: 100%;
                 display: flex;
