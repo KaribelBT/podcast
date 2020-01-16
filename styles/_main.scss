@@ -29,7 +29,7 @@ body{
         }
         .episodes{
             position: relative;
-            z-index: -1;
+            z-index: 1;
             width: 100%;
             height: 1204px;
             background-image: $bacckground-image-gradient;
@@ -46,12 +46,14 @@ body{
                 iframe{
                     width:100%;
                     height: 232px;
+                    border: 0px;
+                    background-color: transparent;
                 }
             }
         }
         .us{
             .img-container{
-                z-index: 1;
+                z-index: 2;
                 transform: translatey(-105px);
                 display: flex;
                 justify-content: center;

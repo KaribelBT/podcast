@@ -1,14 +1,17 @@
 /*Medium devices (landscape tablets, 768px and down)*/
 /* Large devices (laptops/desktops, 992px and up) */
+/* line 1, _normalize.scss */
 html {
   overflow-x: hidden; }
 
+/* line 5, _normalize.scss */
 * {
   margin: 0;
   padding: 0;
   border: 0; }
 
 /*Medium devices (landscape tablets, 768px and down)*/
+/* line 4, _header.scss */
 body header {
   width: 100%;
   height: 44px;
@@ -19,23 +22,30 @@ body header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  /* line 10, _header.scss */
   body header #button-navbar {
     display: none; }
+  /* line 13, _header.scss */
   body header img {
     margin-left: 10px;
     width: 24px;
     height: 24px; }
+  /* line 18, _header.scss */
   body header i {
     margin-right: 10px;
     width: 18px;
     height: 12px;
     color: #060A24; }
+  /* line 24, _header.scss */
   body header #times {
     display: none; }
+  /* line 27, _header.scss */
   body header #bars {
     display: block; }
+  /* line 30, _header.scss */
   body header label {
     display: block; }
+  /* line 33, _header.scss */
   body header .navbar {
     position: absolute;
     right: -100%;
@@ -45,6 +55,7 @@ body header {
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     margin-top: 40px; }
+    /* line 41, _header.scss */
     body header .navbar ul {
       height: 224px;
       list-style: none;
@@ -58,6 +69,7 @@ body header {
       -ms-flex-pack: distribute;
           justify-content: space-around;
       padding-left: 16px; }
+      /* line 49, _header.scss */
       body header .navbar ul li a {
         display: block;
         width: 87px;
@@ -67,22 +79,29 @@ body header {
         font-size: 16px;
         line-height: 1.38em;
         font-family: "IBM Plex Mono", monospace; }
+  /* line 59, _header.scss */
   body header #button-navbar:checked ~ .navbar {
     right: 0; }
+  /* line 62, _header.scss */
   body header #button-navbar:checked ~ label #bars {
     display: none; }
+  /* line 65, _header.scss */
   body header #button-navbar:checked ~ label #times {
     display: block; }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  /* line 73, _header.scss */
   body header {
     height: 80px;
     margin-top: 20px; }
+    /* line 76, _header.scss */
     body header #bars {
       display: none; }
+    /* line 79, _header.scss */
     body header img {
       margin-left: 64px; }
+    /* line 82, _header.scss */
     body header .navbar {
       width: 600px;
       position: relative;
@@ -90,6 +109,7 @@ body header {
       margin-top: 0;
       height: 80px;
       background-color: #FFFFFF; }
+      /* line 89, _header.scss */
       body header .navbar ul {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -98,41 +118,50 @@ body header {
         -ms-flex-pack: distribute;
             justify-content: space-around;
         padding-left: 0; }
+        /* line 94, _header.scss */
         body header .navbar ul li a {
           font-family: "IBM Plex Mono", monospace;
           font-size: 16px;
           line-height: 1.38em;
           color: #060A24; }
+          /* line 96, _header.scss */
           body header .navbar ul li a:hover {
             color: #00F3BB;
             text-decoration: line-through;
             font-weight: 500; }
+          /* line 99, _header.scss */
           body header .navbar ul li a:active {
             color: rgba(6, 10, 36, 0.56);
             text-decoration: line-through; } }
 /*Medium devices (landscape tablets, 768px and down)*/
+/* line 4, _main.scss */
 body main .intro {
   margin-top: 29px;
   margin-right: 16px;
   margin-left: 16px; }
+  /* line 8, _main.scss */
   body main .intro h1 {
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 36px;
     color: #060A24;
     line-height: 1.16em;
     max-width: 250px; }
+  /* line 12, _main.scss */
   body main .intro p {
     margin-top: 16px;
     font-family: "IBM Plex Mono", monospace;
     font-size: 14px;
     color: #060A24;
     line-height: 1.57em; }
+    /* line 14, _main.scss */
     body main .intro p span {
       display: none; }
+  /* line 18, _main.scss */
   body main .intro .button-container {
     margin-top: 36px;
     margin-bottom: 24px;
     text-align: center; }
+    /* line 22, _main.scss */
     body main .intro .button-container button {
       width: 288px;
       height: 48px;
@@ -142,12 +171,14 @@ body main .intro {
       line-height: 1.38em;
       background-color: #00F3BB;
       border: none; }
+      /* line 24, _main.scss */
       body main .intro .button-container button:hover {
         background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
         color: #FFFFFF; }
+/* line 30, _main.scss */
 body main .episodes {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   width: 100%;
   height: 1204px;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
@@ -160,19 +191,25 @@ body main .episodes {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  /* line 39, _main.scss */
   body main .episodes h2 {
     margin: 55px 16px 20px 16px;
     color: #FFFFFF;
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 36px;
     line-height: 1.16em; }
+  /* line 44, _main.scss */
   body main .episodes .iframe-container {
     margin: 11px; }
+    /* line 46, _main.scss */
     body main .episodes .iframe-container iframe {
       width: 100%;
-      height: 232px; }
+      height: 232px;
+      border: 0px;
+      background-color: transparent; }
+/* line 55, _main.scss */
 body main .us .img-container {
-  z-index: 1;
+  z-index: 2;
   -webkit-transform: translatey(-105px);
           transform: translatey(-105px);
   display: -webkit-box;
@@ -181,23 +218,29 @@ body main .us .img-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  /* line 60, _main.scss */
   body main .us .img-container img {
     width: 320px; }
+/* line 64, _main.scss */
 body main .us .text-container {
   margin: -84px 16px 0px 16px; }
+  /* line 66, _main.scss */
   body main .us .text-container h2 {
     color: #060A24;
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 36px;
     line-height: 1.16em; }
+  /* line 70, _main.scss */
   body main .us .text-container p {
     margin-top: 16px;
     font-family: "IBM Plex Mono", monospace;
     font-size: 14px;
     color: #060A24;
     line-height: 1.57em; }
+/* line 75, _main.scss */
 body main .interviews {
   margin-top: 54px; }
+  /* line 77, _main.scss */
   body main .interviews h2 {
     color: #060A24;
     margin-left: 16px;
@@ -206,16 +249,20 @@ body main .interviews {
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 36px;
     line-height: 1.16em; }
+  /* line 85, _main.scss */
   body main .interviews .img-container img {
     width: 100%;
     display: block; }
+/* line 91, _main.scss */
 body main .topics {
   margin: 48px 16px 0px 16px; }
+  /* line 93, _main.scss */
   body main .topics h2 {
     color: #060A24;
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 36px;
     line-height: 1.16em; }
+  /* line 97, _main.scss */
   body main .topics .icons-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -229,11 +276,13 @@ body main .topics {
     text-align: center;
     width: 100%;
     height: 700px; }
+    /* line 104, _main.scss */
     body main .topics .icons-container p {
       font-family: 'IBM Plex San-SemiBold', sans-serif;
       font-size: 24px;
       line-height: 1.34em;
       color: #060A24; }
+/* line 112, _main.scss */
 body main .news {
   position: relative;
   width: 100%;
@@ -255,6 +304,7 @@ body main .news {
   -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
           clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
   text-align: center; }
+  /* line 123, _main.scss */
   body main .news h2 {
     margin-top: 24px;
     margin-bottom: 16px;
@@ -263,10 +313,12 @@ body main .news {
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 36px;
     line-height: 1.16em; }
+  /* line 130, _main.scss */
   body main .news .button-container {
     margin-top: 36px;
     margin-bottom: 24px;
     text-align: center; }
+    /* line 134, _main.scss */
     body main .news .button-container button {
       width: 288px;
       height: 48px;
@@ -276,14 +328,17 @@ body main .news {
       line-height: 1.38em;
       background-color: #00F3BB;
       border: none; }
+      /* line 136, _main.scss */
       body main .news .button-container button:hover {
         background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
         color: #FFFFFF; }
 
 /* medium devices (tablets, 768 and and up) */
 @media only screen and (min-width: 768px) {
+  /* line 150, _main.scss */
   body main .intro h1 {
     max-width: 100%; }
+  /* line 154, _main.scss */
   body main .episodes {
     height: 1043px;
     -webkit-clip-path: polygon(0 12%, 100% 0, 100% 91%, 0% 100%);
@@ -291,6 +346,7 @@ body main .news {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    /* line 158, _main.scss */
     body main .episodes .iframe-container {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -299,31 +355,39 @@ body main .news {
           flex-wrap: wrap;
       -ms-flex-pack: distribute;
           justify-content: space-around; }
+      /* line 162, _main.scss */
       body main .episodes .iframe-container iframe {
         width: 40%;
         padding: 11px; }
+  /* line 168, _main.scss */
   body main .us {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+    /* line 171, _main.scss */
     body main .us .img-container {
       width: 320px;
       -webkit-transform: translate(3px, -141px);
               transform: translate(3px, -141px); }
+      /* line 174, _main.scss */
       body main .us .img-container img {
         width: 320px; }
+    /* line 178, _main.scss */
     body main .us .text-container {
       width: 300px;
       -webkit-transform: translatey(112px);
               transform: translatey(112px); }
+  /* line 183, _main.scss */
   body main .interviews {
     margin-top: -100px; }
+    /* line 185, _main.scss */
     body main .interviews .img-container {
       display: grid;
       grid-template-rows: 1fr 1fr;
       grid-template-columns: 1fr 1fr; }
+  /* line 192, _main.scss */
   body main .topics .icons-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -333,23 +397,29 @@ body main .news {
         -ms-flex-align: center;
             align-items: center;
     height: 300px; }
+  /* line 198, _main.scss */
   body main .news {
     -webkit-clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
             clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%); }
+    /* line 200, _main.scss */
     body main .news h2 {
       max-width: 100%; } }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  /* line 212, _main.scss */
   body main .intro {
     margin-left: 166px; }
+    /* line 214, _main.scss */
     body main .intro h1 {
       font-family: "IBM Plex Sans", sans-serif;
       font-size: 64px;
       color: #060A24;
       line-height: 1.31em; }
+      /* line 216, _main.scss */
       body main .intro h1 span {
         color: #0000EC;
         font-family: "IBM Plex Sans", sans-serif; }
+    /* line 221, _main.scss */
     body main .intro p {
       max-width: 630px;
       margin-top: 16px;
@@ -357,10 +427,13 @@ body main .news {
       font-size: 16px;
       color: #060A24;
       line-height: 1.50em; }
+      /* line 224, _main.scss */
       body main .intro p span {
         display: inline; }
+    /* line 228, _main.scss */
     body main .intro .button-container {
       text-align: left; }
+      /* line 230, _main.scss */
       body main .intro .button-container button {
         width: 226px;
         height: 56px;
@@ -370,14 +443,17 @@ body main .news {
         line-height: 1.33em;
         background-color: #00F3BB;
         border: none; }
+  /* line 235, _main.scss */
   body main .episodes {
     height: 1042,60px; }
+    /* line 237, _main.scss */
     body main .episodes h2 {
       margin-top: -52px;
       margin-left: 166px;
       font-family: "IBM Plex Sans", sans-serif;
       font-size: 48px;
       line-height: 1.29em; }
+    /* line 242, _main.scss */
     body main .episodes .iframe-container {
       width: 100%;
       display: -webkit-box;
@@ -386,8 +462,10 @@ body main .news {
       -webkit-box-pack: space-evenly;
           -ms-flex-pack: space-evenly;
               justify-content: space-evenly; }
+      /* line 246, _main.scss */
       body main .episodes .iframe-container iframe {
         margin-bottom: 44px; }
+  /* line 251, _main.scss */
   body main .us {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -395,56 +473,70 @@ body main .news {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    /* line 254, _main.scss */
     body main .us .img-container {
       width: 400px;
       -webkit-transform: translate(3px, -192px);
               transform: translate(3px, -192px); }
+      /* line 257, _main.scss */
       body main .us .img-container img {
         width: 100%; }
+    /* line 261, _main.scss */
     body main .us .text-container {
       width: 481px;
       padding-left: 115px; }
+      /* line 264, _main.scss */
       body main .us .text-container h2 {
         font-family: "IBM Plex Sans", sans-serif;
         font-size: 48px;
         line-height: 1.29em; }
+      /* line 267, _main.scss */
       body main .us .text-container p {
         margin-top: 16px;
         font-family: "IBM Plex Mono", monospace;
         font-size: 16px;
         color: #060A24;
         line-height: 1.50em; }
+  /* line 273, _main.scss */
   body main .interviews h2 {
     margin-left: 166px;
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 48px;
     line-height: 1.29em; }
+  /* line 277, _main.scss */
   body main .interviews .img-container {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr; }
+  /* line 284, _main.scss */
   body main .topics h2 {
     margin-left: 166px;
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 48px;
     line-height: 1.29em; }
+  /* line 288, _main.scss */
   body main .topics .icons-container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    /* line 290, _main.scss */
     body main .topics .icons-container img {
       padding: 30px; }
+    /* line 293, _main.scss */
     body main .topics .icons-container p {
       padding: 30px; }
+  /* line 298, _main.scss */
   body main .news {
     height: 518px;
     -webkit-clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
             clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%); }
+    /* line 301, _main.scss */
     body main .news h2 {
       margin-top: 121px;
       font-family: "IBM Plex Sans", sans-serif;
       font-size: 48px;
       line-height: 1.29em; }
+    /* line 305, _main.scss */
     body main .news button {
       width: 226px;
       height: 56px;
@@ -455,10 +547,12 @@ body main .news {
       background-color: #00F3BB;
       border: none; } }
 /*Medium devices (landscape tablets, 768px and down)*/
+/* line 3, _footer.scss */
 body footer {
   margin: 24px;
   height: 100px;
   text-align: center; }
+  /* line 7, _footer.scss */
   body footer p {
     margin-top: 16px;
     font-family: "IBM Plex Mono", monospace;
@@ -466,19 +560,23 @@ body footer {
     color: #060A24;
     line-height: 1.57em;
     margin-bottom: 30px; }
+  /* line 11, _footer.scss */
   body footer .i-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
+    /* line 14, _footer.scss */
     body footer .i-container a {
       color: #060A24; }
+      /* line 16, _footer.scss */
       body footer .i-container a:visited {
         color: #060A24; }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  /* line 27, _footer.scss */
   body footer {
     margin: 0;
     height: 60px;
@@ -495,6 +593,7 @@ body footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    /* line 34, _footer.scss */
     body footer p {
       margin-top: 16px;
       font-family: "IBM Plex Mono", monospace;
@@ -503,6 +602,7 @@ body footer {
       line-height: 1.50em;
       margin-bottom: 0;
       margin-left: 60px; }
+    /* line 39, _footer.scss */
     body footer .i-container {
       width: 400px;
       height: 100%;
